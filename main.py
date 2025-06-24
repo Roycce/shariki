@@ -6,6 +6,7 @@ import math
 pygame.init()
 
 WIDTH, HEIGHT = 800, 600
+NUM_BALLS = 1
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
 
@@ -49,7 +50,8 @@ class Ball:
         pygame.gfxdraw.aacircle(surface, int(self.x), int(self.y), self.radius, self.color)
         pygame.gfxdraw.filled_circle(surface, int(self.x), int(self.y), self.radius, self.color)
 
-balls = [Ball() for _ in range(7)]
+
+balls = [Ball() for _ in range(NUM_BALLS)]
 
 running = True
 while running:
