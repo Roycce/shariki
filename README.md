@@ -26,8 +26,6 @@
    cd shariki
 
 2. Установите Pygame:
-   ```
-   pip install pygame
+   `pip install pygame`
 3. Запустите скрипт:
-   ```
-   python main.py
+   `python main.py`
